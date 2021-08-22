@@ -2751,19 +2751,6 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/so_alfaa&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'غنيم' or text == 'gonnem' then  
-local Text = [[  
- °غنيم القمد يصحبي°
-]]  
-keyboard = {}   
-keyboard.inline_keyboard = {  
-{{text = '°گـآســ‘ـر آلگآمــين ، مــ’ـقطــع’ـع وشـ آلتخ ـ‘،ـين 〩°',url="t.me/U_F_G"}},  
-
-}  
-local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/U_F_G&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
 if text == '•━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•' or text == '•━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•' or text == '•━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•' or text == '"' then
 local Text =[[
 من أحسن السورسات على التليجرام سورس الفا
@@ -7622,7 +7609,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم تنزيل جميع االاكساس')
 end
 if text == ("تاك للاكساس") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ◉ قائمة كساس الجروب \n◤━───━𝑬𝑳𝑴𝑼𝑺𝑳????━───━◥\n"
+t = "\n ◉ قائمة كساس الجروب \n•━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -14085,7 +14072,7 @@ if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false 
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n¦• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜  ◉\n¦• 𝙼𝚂𝙶𝚂↬  ↝'..Msguser..'↜  ◉\n¦• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜  ◉\n¦• 𝙸𝙳↬   ↝'..msg.sender_user_id_..'↜ ◉\n¦• 𝙱𝙸𝙾 ↬ ↝'..getbioY..'↜ ◉\n ¦• 𝒄𝒉↬  ↝@so_alfaa ↜   ◉\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي ↝'..Name..'↜ \n¦• 𝚄𝚂𝙴𝚁 ↬  ↝'..Name..'↜    ◉\n¦• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ◉\n ¦• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ◉\n¦• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ◉\n¦• 𝒄𝒉↬   ↝@so_alfaa ↜ ↝🇧??\n')
+send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي ↝'..Name..'↜ \n¦• 𝚄𝚂??𝚁 ↬  ↝'..Name..'↜    ◉\n¦• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ◉\n ¦• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ◉\n¦• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ◉\n¦• 𝒄𝒉↬   ↝@so_alfaa ↜ ↝🇧??\n')
 else
 send(msg.chat_id_, msg.id_, '\n ◉ الصوره ⇜ ليس لديك صور في حسابك'..'[\n¦• 𝚄𝚂𝙴𝚁 ↬ ↝'..username..'↜\n¦• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜\n¦• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜\n¦• 𝒄𝒉↬  ↝@so_alfaa ↜\n')
 end 
