@@ -2751,6 +2751,19 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/so_alfaa&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
+if text == 'غنيم' or text == 'gonnem' then  
+local Text = [[  
+ °غنيم القمد يصحبي°
+]]  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '°گـآســ‘ـر آلگآمــين ، مــ’ـقطــع’ـع وشـ آلتخ ـ‘،ـين 〩°',url="t.me/U_F_G"}},  
+
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/U_F_G&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
 if text == '•━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•' or text == '•━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•' or text == '•━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•' or text == '"' then
 local Text =[[
 من أحسن السورسات على التليجرام سورس الفا
