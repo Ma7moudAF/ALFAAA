@@ -2853,9 +2853,9 @@ local Text =[[
 
 ❍[◍ 𝐃𝐞𝐯 𝐁𝐨𝐝𝐲 ](t.me/BooDY1890)
 
-❍[◍ 𝐂𝐡 𝐌.𝐤  ](t.me/so_alfaa)
+❍[◍ 𝐂𝐡 𝐌.𝐤  ](t.me/SO_M_K)
   
-❍[◍ 𝐅𝐨𝐫 𝐓𝐨 𝐀𝐬𝐤 ◐ ](t.me/H_E_M_BOT)
+❍[◍ 𝐅𝐨𝐫 𝐓𝐨 𝐀𝐬𝐤 ◐ ](t.me/E_H_M_BOT)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14678,7 +14678,7 @@ keyboard.inline_keyboard = {
 {text = 'english 𝅘𝅥𝅮', callback_data="/add"},{text = 'عربي 𝅘𝅥𝅮', callback_data="/help90"},
 },
 {
-{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙰𝙻𝙰𝚉𝙸𝚉𝚈 ', url="t.me/SO_M_K "},
+{text = ' .', url="t.me/SO_M_K "},
 },
 {
 {text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
