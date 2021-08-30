@@ -2723,7 +2723,7 @@ keyboard.inline_keyboard = {
 {text = 'ᴅᴇᴠ ᴍᴏɴɢʏ', url = "https://t.me/Alp_db"},{text = 'ᴅᴇᴠ ᴋᴀᴍᴀʟ', url = "https://t.me/W_H_U"},
 },
 {
-{text = 'ᴅᴇᴠ ᴍᴀᴅɪsᴏɴ', url = "https://t.me/AAHMEED11"},{text = 'ᴅᴇᴠ ᴋᴀᴍᴀʟ', url = "https://t.me/W_H_U"},
+{text = 'ᴅᴇᴠ ᴍᴀᴅɪsᴏɴ', url = "https://t.me/AAHMEED11"},
 },
 {
 {text = 'ᴄʜᴀɴɴᴇʟ ᴀʟғᴀ', url = "https://t.me/so_alfaa"},{text = 'ғᴀᴄᴛᴏʀʏ ᴀʟғᴀ', url = "https://t.me/A_L_VV_BOT"},
