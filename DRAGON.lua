@@ -912,17 +912,20 @@ return false
 end
 ------by-banda--
 if Chat_Type == 'UserBot' then
-if text == 'ukkk' and Dev(msg) then
-if not DevSoFi(msg) then 
-local bl = '›'
+if not DevSoFi(msg) then
+if text == '/start' or text == 'العوده ➷'  then  
+local bl = '➼'
 local keyboard = {
+{'مبرمج السورس'},
 {'قـسم مـطورين الـسورس'},
+{'اسعار التنصيب'},
+{'اسعار السورسات باكمل الحقوق'},
 {'قسم القنوات'},
 {'قـسم الالـعـاب'},
-{'قـسم ممـيزات php'},
+{'php قـسم ممـيزات'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
-end 
+end
 
 end
 end
