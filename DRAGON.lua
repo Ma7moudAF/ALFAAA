@@ -1011,6 +1011,18 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 end 
+if text == 'قـسـم الـسـورس' then
+local Text = 'مرحبا بك عزيزي في قسم السورس 🌚❤️.'
+local Key = {
+{'السورس'},
+{'المبرمج اسلام','المطور براين'},
+{'المبرمج ماديسون'},
+{'قناه السورس','التواصل'},
+{'تحديث السورس','معلومات السيرفر'},
+{'العوده ➷'},
+}
+send_inline_key(msg.chat_id_,Text,Key)
+end 
 if text == 'قـسم الالـعـاب' then
 local Text = 'اهـلا بـك فـي قـسـم الالــعـاب'
 local Key = {
