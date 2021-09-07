@@ -916,13 +916,9 @@ if not DevSoFi(msg) then
 if text == '/start' or text == 'العوده ➷'  then  
 local bl = '➼'
 local keyboard = {
-{'مبرمج السورس'},
-{'قـسم مـطورين الـسورس'},
-{'اسعار التنصيب'},
-{'اسعار السورسات باكمل الحقوق'},
-{'قسم القنوات'},
-{'قـسم الالـعـاب'},
-{'php قـسم ممـيزات'},
+{'قسم القنوات','قـسـم الـسـورس'},
+{'⩹━━━━⊶ғɪʀᴇ⊷━━━━⩺'},
+{'قـسم الالـعـاب','php قـسم ممـيزات'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
 end
@@ -935,8 +931,9 @@ if not DevSoFi(msg) then
 if text == '/start' or text == 'العوده ➷'  then  
 local bl = '➼'
 local keyboard = {
-('قسم القنوات'), 
-{'php قـسم ممـيزات'},
+{'قسم القنوات','قـسـم الـسـورس'},
+{'⩹━━━━⊶ғɪʀᴇ⊷━━━━⩺'},
+{'قـسم الالـعـاب','php قـسم ممـيزات'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
 end
