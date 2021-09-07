@@ -3291,7 +3291,7 @@ keyboard.inline_keyboard = {
 {text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧 ✰.', url = "https://t.me/AAHMEED11"},
 },
 {
-{text = '𝐃𝐞𝐯 𝐄𝐬𝐥𝐚𝐦 ✰.'', url = "https://t.me/U_FCU"},{text = '𝐃𝐞𝐯 𝐁𝐫𝐚𝐢𝐧 ✰.', url = "https://t.me/FACKYOOOOOU"},
+{{text = '𝐃𝐞𝐯 𝐄𝐬𝐥𝐚𝐦 ✰.'', url = "https://t.me/U_FCU"},{text = '𝐃𝐞𝐯 𝐁𝐫𝐚𝐢𝐧 ✰.', url = "https://t.me/FACKYOOOOOU"}},
 },
 {
 {text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐄 ✰. ', url = "https://t.me/SO_FIR"},
