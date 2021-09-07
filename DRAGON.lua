@@ -1299,10 +1299,10 @@ keyboard.inline_keyboard = {
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/MADI_PICK1/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'قـسـم الـسورس' and DevSoFi(msg) then 
+if text == 'قـسـم الـسـورس' and DevSoFi(msg) then 
 local Text = 'مرحبا بك عزيزي في قسم السورس 🌚❤️.'
 local Key = {
 {'السورس'},
@@ -3292,7 +3292,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧 ✰.', url="t.me/AAHMEED11"}},
-{{text = '𝐃𝐞𝐯 𝐄𝐬𝐥𝐚𝐦 ✰.',url="t.me/U_FCU"},{text = '𝐃𝐞𝐯 𝐁𝐫𝐚𝐢𝐧 ✰.', url="t.me/FACKYOOOOOU"}},
+{text = '𝐃𝐞𝐯 𝐄𝐬𝐥𝐚𝐦 ✰.',url="t.me/U_FCU"},{text = '𝐃𝐞𝐯 𝐁𝐫𝐚𝐢𝐧 ✰.', url="t.me/FACKYOOOOOU"},
 {{text = '𝐂𝐇 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
