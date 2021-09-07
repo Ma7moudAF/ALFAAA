@@ -1018,7 +1018,6 @@ local Key = {
 {'المبرمج اسلام','المطور براين'},
 {'المبرمج ماديسون'},
 {'قناه السورس','التواصل'},
-{'تحديث السورس','معلومات السيرفر'},
 {'العوده ➷'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
@@ -3275,23 +3274,34 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/SO_FIR/406/903&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-local Text = [[
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'ياسورس'  then
+local Text =[[
 ┄─━━━━━✧━━━━━─┄
 ⌾ |  [𝐖𝐞𝐥𝐜𝐨𝐦 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐅𝐢𝐫𝐞⦒](t.me/SO_FIR)
+
 ⌾ |  [𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐈𝐧 𝐓𝐞𝐥𝐠𝐫𝐚𝐦⦒](t.me/SO_FIR)
+
 ⌾ |  [𝐕𝐞𝐫𝐲 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐞𝐝 𝐒𝐨𝐮𝐫𝐜𝐞 𝐍𝐀𝐒𝐀⦒](t.me/SO_FIR)
 ┄─━━━━━✧━━━━━─┄
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧 ✰.', url="t.me/MaDiSoOnN_1"}},
-{{text = '𝐃𝐞𝐯 𝐄𝐬𝐥𝐚𝐦 ✰.', url="t.me/U_FCU"},{text = '𝐃𝐞𝐯 𝐁𝐫𝐚𝐢𝐧 ✰.',url="t.me/FACKYOOOOOU"}},
-{{text = '𝐂𝐇 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
-{{text = 'اضف البوت الي مجموعتك ✰. ' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+
+{
+{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧 ✰.', url = "https://t.me/AAHMEED11"},
+},
+{
+{text = '𝐃𝐞𝐯 𝐄𝐬𝐥𝐚𝐦 ✰.'', url = "https://t.me/U_FCU"},{text = '𝐃𝐞𝐯 𝐁𝐫𝐚𝐢𝐧 ✰.', url = "https://t.me/FACKYOOOOOU"},
+},
+{
+{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐄 ✰. ', url = "https://t.me/SO_FIR"},
+},
+{
+{text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
+},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/MADI_PICK1/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/MADI_PICK1/3?single&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -3303,7 +3313,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧 ✰.', url="t.me/AAHMEED11"}},
 {text = '𝐃𝐞𝐯 𝐄𝐬𝐥𝐚𝐦 ✰.',url="t.me/U_FCU"},{text = '𝐃𝐞𝐯 𝐁𝐫𝐚𝐢𝐧 ✰.', url="t.me/FACKYOOOOOU"},
-{{text = '𝐂𝐇 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
+{{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3318,6 +3328,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧 ✰.',url="t.me/AAHMEED11"}},
+{{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3331,6 +3342,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝐃𝐞𝐯 𝐄𝐬𝐥𝐚𝐦 ✰.',url="t.me/U_FCU"}},
+{{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/U_FCU&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3344,6 +3356,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝐃𝐞𝐯 𝐁𝐫𝐚𝐢𝐧 ✰.',url="t.me/FACKYOOOOOU"}},
+{{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/FACKYOOOOOU&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3374,7 +3387,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐂𝐇 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}}, 
+{{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
+{{text = '𝐓𝐖𝐀𝐒𝐋 𝐒𝐎𝐔𝐑𝐂𝐄 ✰', url="t.me/E_H_M_BOT"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_FIR&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3388,7 +3402,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐂𝐇 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}}, 
+{{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
+{{text = '𝐓𝐖𝐀𝐒𝐋 𝐒𝐎𝐔𝐑𝐂𝐄 ✰', url="t.me/E_H_M_BOT"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_FIR&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3428,7 +3443,7 @@ keyboard = {} keyboard.inline_keyboard = {
 {{text = '📖لقاء مع كاتب رعب"', url="https://t.me/t.me/SO_FIR"}},
 {{text = '📖رواية"الإنسان الأخير""', url="https://t.me/t.me/SO_FIR"}},
 {{text = '📖رواية" مقبرة الحيوانات""', url="https://t.me/SO_FIR"}},
-{{text = '𝐂𝐇 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
+{{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
@@ -3467,11 +3482,9 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'جابوا مبرمج السورس',url="t.me/J_A_B_W_A"}},
-{{text = 'طه مبرمج السورس',url="t.me/TahaSayed9"}},
-{{text = 'اكسسفر مبرمج السورس',url="t.me/Dv_Exlevr"}},
-{{text = 'مصري مالك السورس',url="t.me/PPPPP7P"}},
-{{text = '𝐂𝐇 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
+{{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧 ✰.', url="t.me/AAHMEED11"}},
+{text = '𝐃𝐞𝐯 𝐄𝐬𝐥𝐚𝐦 ✰.',url="t.me/U_FCU"},{text = '𝐃𝐞𝐯 𝐁𝐫𝐚𝐢𝐧 ✰.', url="t.me/FACKYOOOOOU"},
+{{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -4449,11 +4462,12 @@ if text == 'التواصل' or text == 'التوصل' or text == 'بوت توص�
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
 [𝐂𝐇 𝐅𝐈𝐑𝐄 ✰](t.me/SO_FIR)
-[ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ](t.me/E_H_M_BOT)
+[𝐓𝐖𝐀𝐒𝐋 𝐒𝐎𝐔𝐑𝐂𝐄 ✰](t.me/E_H_M_BOT)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐂𝐇 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}}, 
+{{text = '𝐓𝐖𝐀𝐒𝐋 𝐒𝐎𝐔𝐑𝐂𝐄 ✰', url="t.me/SO_FIR"}}, 
+{{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐄 ✰', url="t.me/SO_FIR"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/MADI_PICK1/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
