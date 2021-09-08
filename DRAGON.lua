@@ -3281,7 +3281,7 @@ local Text =[[
 
 ⌾ |  [𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐈𝐧 𝐓𝐞𝐥𝐠𝐫𝐚𝐦⦒](t.me/SO_FIR)
 
-⌾ |  [𝐕𝐞𝐫𝐲 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐞𝐝 𝐒𝐨𝐮𝐫𝐜𝐞 𝐍𝐀𝐒𝐀⦒](t.me/SO_FIR)
+⌾ |  [𝐕𝐞𝐫𝐲 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐞𝐝 𝐒𝐨𝐮𝐫𝐜𝐞 𝐅𝐢𝐫𝐞⦒](t.me/SO_FIR)
 ┄─━━━━━✧━━━━━─┄
 ]]
 keyboard = {} 
@@ -6564,7 +6564,7 @@ Srrt = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..t
 Sto = JSON.decode(Srrt)
 if Sto.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
-t = " ☽ المنشئين الاساسين تعالو مخرب \n⩹━━━━⊶❲𖥳 𝐒??𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = " ☽ المنشئين الاساسين تعالو مخرب \n⩹━━━━⊶ғɪʀᴇ⊷━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -13495,19 +13495,14 @@ end,nil)
 end
 end
 
-if text == "الزمن" then
-local time = https.request('https://devdeiveddev.ml/IP/timeEG.php')
-local timezone = "الساعه الان بتوقيت القاهره : "..time.."\nالتاريخ : "..os.date("%Y/%m/%d")
-send(msg.chat_id_, msg.id_,timezone)
-end
 if text == "الساعه" or text == 'الوقت' then
-local time = https.request('https://devdeiveddev.ml/IP/timeEG.php')
-local timezone = "الساعه الان بتوقيت القاهره : "..time
-send(msg.chat_id_, msg.id_,timezone)
+local ramsesj20 = "\n الساعه الان : "..os.date("%I:%M%p")
+send(msg.chat_id_, msg.id_,ramsesj20)
 end
+
 if text == "التاريخ" then
-local timezone =  "التاريخ : "..os.date("%Y/%m/%d")
-send(msg.chat_id_, msg.id_,timezone)
+local ramsesj20 =  "\n التاريخ : "..os.date("%Y/%m/%d")
+send(msg.chat_id_, msg.id_,ramsesj20)
 end
 --------------
 --- هههه ها فرخ دتبوك ؟ ههههههههههه 
