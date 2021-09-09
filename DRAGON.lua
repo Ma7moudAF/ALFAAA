@@ -15038,7 +15038,6 @@ tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_i
 return false
 end
 end,nil)   
-else
 send(msg.chat_id_, msg.id_,' ☽ تم تعطيل امر اطردني') 
 end
 end
@@ -17382,7 +17381,7 @@ local Text = [[
 [🕹اضغط علي الأزرار في الأسفل  ⇈⇊]
 [🎯ألعاب سورس فاير الاحسن في التليجرام ⇈⇊]
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
- [𝐂𝐇 𝐅𝐈𝐑𝐄 ✰](t.me/SO_FIR)
+ [𝐂𝐇 𝐅𝐈??𝐄 ✰](t.me/SO_FIR)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
