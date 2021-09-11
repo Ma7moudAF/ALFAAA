@@ -11397,19 +11397,12 @@ database:del(bot_id.."pp_photo:status"..msg.chat_id_)
 send(msg.chat_id_, msg.id_," ☽ تم تعطيل نسبه جمالك") 
 return false end
 end
-if text == 'الرابط' or text == 'رابط'  then
-local Text = [[
-•اختار نوع الرابط الي ترودي⇣
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'رابط اونلاين', callback_data="/ven2"},{text = 'رابط بالصور', callback_data="/ven1"}},   
-{{text = 'رابط بنص', callback_data="/ven3"}},
-{{text = '•ᴍʏ ᴄʜᴀɴɴᴇʟ♪', url="t.me/SO_FIR"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
+if text == "الرابط" then 
+local status_Link = database:get(bot_id.."Link_Group:status"..msg.chat_id_) 
+if not status_Link then 
+send(msg.chat_id_, msg.id_,"الرابط معطل")  
+return false   
+end 
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or database:get(bot_id.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
@@ -14993,31 +14986,11 @@ send(msg.chat_id_, msg.id_, sofi)
 end,nil)
 end,nil)
 end 
-if text == 'نزلني' or text == 'نزيلني' and GetChannelMember(msg) then 
-if not bot_data:get(ban_id..'Cick:Me'..msg.chat_id_) then 
-local Text = ": هل انت متاكد  من تنزيلك من جميع الرتب: "
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text="نعم",callback_data="nzllne"..msg.sender_user_id_},{text="لا",callback_data="noKikedMe"..msg.sender_user_id_}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end 
-end
-if text == 'اطردني' or text == 'طردني' and GetChannelMember(msg) then   
-if not bot_data:get(ban_id..'Cick:Me'..msg.chat_id_) then
+if text == 'اطردني' or text == 'طلعني' then
+if not database:get(bot_id..'Cick:Me'..msg.chat_id_) then
 if Can_or_NotCan(msg.sender_user_id_, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, '\n ●عذرا لا استطيع طرد ( '..Rutba(msg.sender_user_id_,msg.chat_id_)..' )')
+send(msg.chat_id_, msg.id_, '\n ☽ عذرا لا استطيع طرد ( ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜ )')
 return false
-end
-local Text = "قم بتأكيد العمليه الان"
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text="تأكيد الامر",callback_data="OkKikedMe"..msg.sender_user_id_},{text="الغاء الامر",callback_data="noKikedMe"..msg.sender_user_id_}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
 end
 tdcli_function({ID="ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=msg.sender_user_id_,status_={ID="ChatMemberStatusKicked"},},function(arg,data) 
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
@@ -15038,6 +15011,7 @@ tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_i
 return false
 end
 end,nil)   
+else
 send(msg.chat_id_, msg.id_,' ☽ تم تعطيل امر اطردني') 
 end
 end
@@ -15795,7 +15769,7 @@ local List = {
 [[
 🌯|✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 ➢ ⁞  #username 🇪🇬
 🌯|✙• 𝐦𝐬𝐠 ➢ ⁞  #msgs  📝
-🌯|✙• 𝒓??𝒏𝒌 ➢ ⁞ #stast  
+🌯|✙• 𝒓𝒂𝒏𝒌 ➢ ⁞ #stast  
 🌯|✙• 𝐢𝐝 𝒔𝒕𝒂 ➢ ⁞ #id  🆔
 🌯| 𝗖𝗛 - ↝@SO_FIR↜ ☽ .
 ]],
@@ -16239,7 +16213,7 @@ Msᴀɢ ~ #msgs
 𝗖𝗛 - ↝@SO_FIR↜ ☽ 
 ]],
 [[
-🇪??≪💎≫ #username • メ
+🇪🇬≪💎≫ #username • メ
 🇪🇬≪💎≫ #stast  •メ
 🇪🇬≪💎≫ #id  • メ
 🇪🇬≪💎≫ #msgs  •メ
@@ -16685,7 +16659,7 @@ Msᴀɢ ~ #msgs
 [[
 - 🇪🇬 UsErNaMe . #username 𖠲
 - 🇪?? StAsT . #stast 𖠲
-- 🇪?? Id . #id 𖠲
+- 🇪🇬 Id . #id 𖠲
 - 🇪🇬 GaMeS . #game 𖠲
 - 🇪🇬 MsGs . #msgs 𖠲
 - 🇪🇬 𝗖𝗛 - ↝@SO_FIR↜ ☽ 
@@ -17381,7 +17355,7 @@ local Text = [[
 [🕹اضغط علي الأزرار في الأسفل  ⇈⇊]
 [🎯ألعاب سورس فاير الاحسن في التليجرام ⇈⇊]
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
- [𝐂𝐇 𝐅𝐈??𝐄 ✰](t.me/SO_FIR)
+ [𝐂𝐇 𝐅𝐈𝐑𝐄 ✰](t.me/SO_FIR)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
